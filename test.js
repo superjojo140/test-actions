@@ -1,2 +1,4 @@
 console.log("Let's test");
-console.log(process.env.mname);
+if(process.env.manme == "Johannes"){
+    console.log("Name was Johannes");
+}   
