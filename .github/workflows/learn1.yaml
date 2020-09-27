@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: Setup Node.js environment
         uses: actions/setup-node@v1.4.3
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
       - name: Echo secret key
         env: 
           mname : ${{secrets.MY_NAME}}
