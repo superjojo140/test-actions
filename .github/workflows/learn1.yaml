@@ -4,4 +4,7 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
+      - with: 
+          mname : ${{secrets.MY_NAME}}
       - run: echo "Hello World"
+      - run: echo "$mname"
