@@ -4,7 +4,9 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v1.4.3
       - name: Echo secret key
         env: 
           mname : ${{secrets.MY_NAME}}
-        run: echo "$mname"
+        run: node test.js
