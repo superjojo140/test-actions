@@ -1,5 +1,10 @@
 name: learn1
-on: [push]
+# Run on a push to the deploy branch
+on: 
+  push:
+    branches:
+        - deploy
+        
 jobs:
   say-hello:
     runs-on: ubuntu-latest
